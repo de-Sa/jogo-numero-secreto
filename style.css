@@ -4,7 +4,7 @@
     --font-family: "Inconsolata", monospace;
     --bg-color: #561C24;
     --primary-color: #E8D8C4;
-    
+    #
 }
 
 body {
@@ -48,7 +48,7 @@ h3 {
 }
 
 .botao-jogar {
-    font-size: 1em;
+    font-size: 1.4em;
     padding: 8px 15px;
     border: 0;
     background: var(--primary-color);

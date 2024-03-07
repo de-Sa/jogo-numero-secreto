@@ -2,8 +2,21 @@ function verificarOValorDoChute(chute) {
     const numero = +chute
 
     if (chuteForInvalido(numero)) {
-        elementoChute.innerHTML += '<div>valor inválido</div>'
-        return
+
+        if (chute === "desisto") {
+            document.body.innerHTML = `
+            <h2>Game Over!!</h2> 
+            <h3>o número era: ${numeroSecreto}</h2> 
+            <h3>Pressione o botão para jogar novamente</h3> 
+            <button id="jogar-novamente" class="botao-jogar">Jogar novamente</button>
+            `
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "#ff0022b4";
+            document.getElementById("jogar-novamente").style.background = "#ff0022b4";
+            
+        } else {
+            elementoChute.innerHTML += '<div>valor inválido</div>'
+        }
     }
 
     if (numeroForMaiorOuMenorQueOValor(numero)) {
