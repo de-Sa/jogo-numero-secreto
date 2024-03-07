@@ -4,7 +4,6 @@
     --font-family: "Inconsolata", monospace;
     --bg-color: #561C24;
     --primary-color: #E8D8C4;
-    #
 }
 
 body {
@@ -63,3 +62,65 @@ h5 {
     border-radius: 5px;
     margin-top: 20px;
 }
+
+@media (max-width: 900px) {
+    h1{
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+        margin-top: 25px;
+    }
+    h5 {
+        font-size: 1.2em;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 2em;
+    }
+    
+    .mensagem{
+        font-size: 1.5em;
+        margin-top: 45px;
+    }
+    
+    .box {
+        border: 2px solid var(--primary-color);
+        display: inline-block;
+        font-size: 4em;
+        padding: 30px;
+        margin: 20px;
+    }
+    
+    .botao-jogar {
+        font-size: 1.4em;
+        padding: 8px 15px;
+        border: 0;
+        background: var(--primary-color);
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 720px) {
+    h1{
+        font-size: 2em;
+    }
+
+    .box {
+        border: 2px solid var(--primary-color);
+        display: inline-block;
+        font-size: 2em;
+        padding: 30px;
+        margin: 20px;
+    }
+    
+}
+
